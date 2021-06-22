@@ -12,13 +12,13 @@ from discord_webhook import DiscordWebhook, DiscordEmbed
 import os
 from dotenv import load_dotenv
 
-load_dotenv()
+load_dotenv('../../.env')
 
 @require_POST
 @csrf_exempt
 def webhook(request):
     raw_body = request.body
-    webhook_secret = os.getenv('WEBHOOK_SECRET')
+    webhook_secret = os.getenv('RAZORPAY_WEBHOOK_SECRET')
     webhook_signature = request.headers.get('X-Razorpay-Signature')
 
     if webhook_signature is None:
