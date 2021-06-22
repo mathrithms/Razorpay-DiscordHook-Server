@@ -1,0 +1,113 @@
+{
+    "entity": "event",
+    "account_id": "acc_GX8LUCbxau3DQU",
+    "event": "order.paid",
+    "contains": [
+        "payment",
+        "order"
+    ],
+    "payload": {
+        "payment": {
+            "entity": {
+                "id": "pay_HHrr2eCN3U2zjF",
+                "entity": "payment",
+                "amount": 10000,
+                "currency": "INR",
+                "status": "captured",
+                "order_id": "order_HHrqYx2hp7Kx9V",
+                "invoice_id": null,
+                "international": false,
+                "method": "upi",
+                "amount_refunded": 0,
+                "refund_status": null,
+                "captured": true,
+                "description": null,
+                "card_id": null,
+                "bank": null,
+                "wallet": null,
+                "vpa": "success@razorpay",
+                "email": "test@test.test",
+                "contact": "+919412146818",
+                "notes": {
+                    "email": "test@test.test",
+                    "phone": "9412146818"
+                },
+                "fee": 236,
+                "tax": 36,
+                "error_code": null,
+                "error_description": null,
+                "error_source": null,
+                "error_step": null,
+                "error_reason": null,
+                "acquirer_data": {
+                    "rrn": "246983088711",
+                    "upi_transaction_id": "DDC53C72305D5A55F373277563FCEABF"
+                },
+                "created_at": 1622566311
+            }
+        },
+        "order": {
+            "entity": {
+                "id": "order_HHrqYx2hp7Kx9V",
+                "entity": "order",
+                "amount": 10000,
+                "amount_paid": 10000,
+                "amount_due": 0,
+                "currency": "INR",
+                "receipt": null,
+                "payments": {
+                    "entity": "collection",
+                    "count": 1,
+                    "items": [
+                        {
+                            "id": "pay_HHrr2eCN3U2zjF",
+                            "entity": "payment",
+                            "amount": 10000,
+                            "currency": "INR",
+                            "status": "captured",
+                            "order_id": "order_HHrqYx2hp7Kx9V",
+                            "invoice_id": null,
+                            "international": false,
+                            "method": "upi",
+                            "amount_refunded": 0,
+                            "refund_status": null,
+                            "captured": true,
+                            "description": null,
+                            "card_id": null,
+                            "bank": null,
+                            "wallet": null,
+                            "vpa": "success@razorpay",
+                            "email": "test@test.test",
+                            "contact": "+919412146818",
+                            "notes": {
+                                "email": "test@test.test",
+                                "phone": "9412146818"
+                            },
+                            "fee": 236,
+                            "tax": 36,
+                            "error_code": null,
+                            "error_description": null,
+                            "error_source": null,
+                            "error_step": null,
+                            "error_reason": null,
+                            "acquirer_data": {
+                                "rrn": "246983088711",
+                                "upi_transaction_id": "DDC53C72305D5A55F373277563FCEABF"
+                            },
+                            "created_at": 1622566311
+                        }
+                    ]
+                },
+                "offer_id": null,
+                "status": "paid",
+                "attempts": 1,
+                "notes": {
+                    "email": "test@test.test",
+                    "phone": "9412146818"
+                },
+                "created_at": 1622566284
+            }
+        }
+    },
+    "created_at": 1622566312
+}
